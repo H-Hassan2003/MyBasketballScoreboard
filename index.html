@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <button id="home-el"></button>
+                <div class="scores">
+                    <button id="home-1" onclick="incrementHomeby1()"></button>
+                    <button id="home-2" onclick="incrementHomeby2()"></button>
+                    <button id="home-3" onclick="incrementHomeby3()"></button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <button id="guest-el"></button>
+                <div class="scores">
+                    <button id="guest-1" onclick="incrementGuestby1()"></button>
+                    <button id="guest-2" onclick="incrementGuestby2()"></button>
+                    <button id="guest-3" onclick="incrementGuestby3()"></button>
+                </div>
+            </div>
+        </div>
+        <div class="bonus">
+            <button id="winner-el" onclick="win()">Winner</button>
+            <br>
+            <button id="startOver-el" onclick="start()">Start Over</button>
+        </div>
+        <p id="text-el"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
